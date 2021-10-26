@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Me | NJP</title>
+
+  <!-- another example of inline css -->
+
+  <style>
+    body {
+      background: rgba(255, 220, 155, 0.7);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    hr {
+      height: 40px;
+      background: lightgreen;
+      border: none;
+    }
+
+    dl {
+      background: rgba(255, 220, 155, 0.1);
+    }
+
+    a {
+      font-size: 18px;
+      color: blue;
+    }
+
+    span {
+      font-size: 17px;
+    }
+    nav{
+      text-align: center;
+    }
+    #submit-btn{
+      padding: 5px;
+      background-color: rgb(36, 146, 42);
+      color: white;
+      width: 100px;
+      font-size: 14px;
+    }
+    #reset-btn {
+      padding: 5px;
+      background-color: rgb(219, 35, 75);
+      color: white;
+      width: 100px;
+      font-size: 14px;
+    }
+    #submit-btn:hover, #reset-btn:hover {
+      background-color: rgba(221, 218, 36, 0.8);
+      color: rgb(0, 0, 0);
+    }
+    input, label {
+      font-size: 18px;
+    }
+  </style>
+
+  <!-- end of inline css -->
+
+</head>
+
+<body>
+  <h1>Let's ring a bell ! Could you ? </h1>
+  <hr>
+  <!-- using definition list to create contact page. -->
+  <dl>
+    <dt>
+      <h3>Let's Connect</h3>
+    </dt>
+    <dd><a href="mailto:naisargjpatel@gmail.com?subject=Let's Connect">
+        Mail me
+      </a>
+    </dd>
+    <dt>
+      <h3>Personal contact number </h3>
+    </dt>
+    <dd>(+00) 123-456-789 (random number 😂)
+    </dd>
+    <dt>
+      <h3>Follow me on social media ! </h3>
+    </dt>
+    <dd>
+      <span>Instagram Id : </span>
+      <a href="https://instagram.com" target="_blank">patelnaisarg</a>
+    </dd>
+  </dl>
+
+  <br>
+  <hr> 
+  <h3>Provide Feedback !</h3>
+  <form action="mailto:naisargjpatel@gmail.com?subject=Feedback" method="post"
+  enctype="text/plain">
+    <label for="username">Your Name : </label>
+    <input type="text" name="username" id="username" placeholder="not mandatory">
+    <br> <br>
+    <label for="email">Your Email : </label>
+    <input type="email" name="useremail" id="email" required placeholder="must provide">
+    <br> <br>
+    <label for="message">Message : (max length 150 words)</label>
+    <br> 
+    <textarea name="message" rows="10" cols="45" maxlength="150" required></textarea>
+    <br>
+    <input type="submit" value="Send" id="submit-btn">
+    <input type="reset" value="Reset" id="reset-btn">
+  </form>
+  <hr> <br>
+
+  <footer>
+    <nav>
+      <span>Return to : </span> <a href="index.html">Home Page</a>
+    </nav>
+  </footer>
+</body>
+
+</html>
